@@ -1,23 +1,40 @@
-const { Mediator } = require("./mediator");
+const { ChatRoom } = require("./mediator");
 const User = require("./user");
 
-const linkedInServer = new Mediator("linkedin-server");
+const linkedInChatRoom = new ChatRoom("linkedin-server");
 
 const harish = new User("harish sambasivam");
 const ravi = new User("ravi kiran");
 const sasi = new User("sasi kumar");
 const amudhan = new User("amudhavigneshwaran");
 
-linkedInServer.addUser(harish);
-linkedInServer.addUser(ravi);
-linkedInServer.addUser(sasi);
-linkedInServer.addUser(amudhan);
+linkedInChatRoom.addUser(harish);
+linkedInChatRoom.addUser(ravi);
+linkedInChatRoom.addUser(sasi);
+linkedInChatRoom.addUser(amudhan);
 
-harish.send(ravi, "Hello, Brother. How are You!");
-ravi.send(harish, "I'm good bro, wbu?");
+harish.send("Hello, Brother. How are You!", ravi);
+ravi.send("I'm good bro, wbu?", harish);
 
-harish.send(amudhan, "Have a nice day, Anna!");
-amudhan.send(harish, "Thank You!");
+harish.send("Have a nice day, Anna!", amudhan);
+amudhan.send("Thank You!", harish);
 
-sasi.send(harish, "How are you?");
-harish.send(sasi, "I'am good :) ");
+sasi.send("How are you?", harish);
+harish.send("I'am good :) ", sasi);
+
+harish.send("Have a nice Day Everyone!");
+
+// harish sambasivam to ravi kiran 💨 Hello, Brother. How are You!
+// ravi kiran to harish sambasivam 💨 I'm good bro, wbu?
+// harish sambasivam to amudhavigneshwaran 💨 Have a nice day, Anna!
+// amudhavigneshwaran to harish sambasivam 💨 Thank You!
+// sasi kumar to harish sambasivam 💨 How are you?
+// harish sambasivam to sasi kumar 💨 I'am good 💨)
+// harish sambasivam to harish sambasivam 💨 Have a nice Day Everyone!
+// harish sambasivam to ravi kiran 💨 Have a nice Day Everyone!
+// harish sambasivam to sasi kumar 💨 Have a nice Day Everyone!
+// harish sambasivam to amudhavigneshwaran 💨 Have a nice Day Everyone!
+
+// https://medium.com/better-programming/the-mediator-pattern-in-javascript-2bd2ff244447
+// https://www.youtube.com/watch?v=ZuhgOu-DGA4&t=87s
+// https://www.youtube.com/watch?v=KOVc5o5kURE

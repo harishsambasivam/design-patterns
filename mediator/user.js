@@ -4,11 +4,11 @@ module.exports = class User {
     this.mediator = null;
   }
 
-  send(receiver, message) {
-    this.mediator.send(this.name, receiver, message);
+  send(message, receiver) {
+    this.mediator.send(message, this.name, receiver);
   }
 
-  receive(sender, message) {
+  receive(message, sender) {
     console.log(`${sender} to ${this.name} : ${message}`);
   }
 };
