@@ -1,5 +1,8 @@
 // https://medium.com/better-programming/understanding-the-iterator-pattern-in-javascript-typescript-using-symbol-iterator-ab400d46b14a
 
+
+// the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements.
+
 class Iterator {
   constructor(item) {
     this.items = item;
@@ -14,6 +17,7 @@ class Iterator {
     return this.items[this.index++];
   }
 
+  // Iterator
   next() {
     return { value: this.value(), done: !this.hasNext() };
   }

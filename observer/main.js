@@ -21,17 +21,17 @@ akshaySaini.unsubscribe(santhosh);
 akshaySaini.unsubscribe(harish);
 
 akshaySaini.notifySubscribers(
-  "Akashai Saini uploaded : how to launch a rocket🚀 with JavaScript!"
+  "Akashai Saini uploaded 💨 how to launch a rocket🚀 with JavaScript!"
 );
 
-// Hey, harish : Akashai Saini uploaded : how to cook👨‍🍳 food with JavaScript!
+// Hey, harish 💨 Akashai Saini uploaded : how to cook👨‍🍳 food with JavaScript!
 //
-// Hey, santhosh : Akashai Saini uploaded : how to cook👨‍🍳 food with JavaScript!
+// Hey, santhosh 💨 Akashai Saini uploaded : how to cook👨‍🍳 food with JavaScript!
 //
-// Hey, ravi : Akashai Saini uploaded : how to cook👨‍🍳 food with JavaScript!
+// Hey, ravi 💨 Akashai Saini uploaded : how to cook👨‍🍳 food with JavaScript!
 //
-// Hey, george : Akashai Saini uploaded : how to cook👨‍🍳  food with JavaScript!
+// Hey, george 💨 Akashai Saini uploaded : how to cook👨‍🍳  food with JavaScript!
 //
-// Hey, ravi : Akashai Saini uploaded : how to launch a rocket🚀 with JavaScript!
+// Hey, ravi 💨 Akashai Saini uploaded : how to launch a rocket🚀 with JavaScript!
 //
-// Hey, george : Akashai Saini uploaded : how to launch a rocket🚀 with JavaScript!
+// Hey, george 💨 Akashai Saini uploaded : how to launch a rocket🚀 with JavaScript!

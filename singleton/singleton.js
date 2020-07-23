@@ -32,3 +32,5 @@ console.log(processMan1); // ProcessManager {noOfProcess: 2}
 console.log(processMan2); // ProcessManager {noOfProcess: 2}
 
 console.log(processMan1 === processMan2); // true
+
+// https://medium.com/front-end-weekly/javascript-design-patterns-ed9d4c144c81#:~:text=The%20Singleton%20pattern%20is%20thus,if%20one%20doesn't%20exist.
